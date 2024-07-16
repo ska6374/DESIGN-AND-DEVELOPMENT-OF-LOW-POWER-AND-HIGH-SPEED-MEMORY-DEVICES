@@ -1,4 +1,5 @@
 # DESIGN _AND_DEVELOPMENT_OF_LOW-POWER_AND_HIGH-SPEED-MEMORY_DEVICES
+<br>
 <h2>I. Abstract :</h2>
 Recently, speed and power 
 consumption are becoming the most important part 
@@ -14,7 +15,8 @@ from the results that the SRAM cell which acts as a
 cache memory is better in performance with 
 minimum power.
 <br>Keyword- SRAM
-
+<br>
+<br>
 <h2>II. Introduction :</h2>
 Static Random Access memory takes a large area 
 due to the number of transistors for a single bit. The cell 
@@ -41,14 +43,15 @@ to close, a precharge circuit permits the current to flow in a
 controlled manner while the voltage level increases to the
 very close to the source voltage. All the simulations are 
 done in cadence virtuoso 180nm technology. 
-
+<br>
+<br>
 <h2>III. Design :</h2>
 <h3>A. Conventional SRAM 6T Cell-</h3>
 The design of an SRAM 6T cell is similar to a latch in 
 which two CMOS inverters are connected back to back (M1-
 M2 and M3-M4) with two secondary nmos transistors (M5-
 M6) are connected to the paired bit line BL and bit line bar 
-BLB.[5] These two transistors are connected to the word line 
+BLB.These two transistors are connected to the word line 
 to perform the access of read and write operation as shown in 
 Fig.<br>
 <br>
@@ -77,12 +80,12 @@ less than the threshold voltage of M2 then M2 is turned off
 and M1is turned on. That means output Q will be 1. So 
 input Q is 0 and output Q=1 means data is written.
 <br>
-<br>
+
 
 
  <h3>Read operation -</h3>
 WL is high, t memory should hold some value. 
-Now Q is 1 and QB is complementing 0. [6] Now 
+Now Q is 1 and QB is complementing 0.Now 
 memory has some value stored and to read BL and BLB 
 now act as output lines and these lines will be precharged 
 by voltage VDD at both nodes Q and QB. Now there is 
@@ -96,10 +99,11 @@ comparator and it says if BLB decreases then the output
 will be 1 it means we successfully read from the memory 
 because the memory has a value of 1 and getting read 1 
 as output.
-
- <h3>B. Sense amplifier</h3>
+<br>
+<br>
+<h3>B. Sense amplifier</h3>
 The sense amplifier is based on the voltage mode's 
-operation on the differential voltage created by the bitlines, The circuit is composed of cross-coupled inverters 
+operation on the differential voltage created by the bit-lines, The circuit is composed of cross-coupled inverters 
 that turn the bit-line voltage differential at their input into 
 a full-swing output.The voltage mode sensing 
 amplifier circuit is illustrated in the figure.
@@ -107,6 +111,81 @@ amplifier circuit is illustrated in the figure.
 <br>
 
 ![Screenshot-19](https://github.com/user-attachments/assets/9c614303-b22a-4216-ac3a-a60eff595054)
+<br>
+<br>
+<br>The column bit-lines of the cell are connected to 
+the BL and BLB(BL_)inputs. M2-M4 and M3-M1 work 
+together to create the inverters, which change the 
+differential voltage on the bit lines into a full swing at the 
+output. Pre-charging the internal nodes Q, and QB of this 
+circuit through the bit-lines is accomplished by the pre-charge circuitry. To enable the sense amplifier, the 
+memory cell is connected to it via M1 and M2. M5 is 
+utilized to activate the sense amplifier. The nodes inside 
+the output inverters insulate the sense amplifier from the 
+external load. Voltage based sense amplifier action 
+occurs in two stages. Bit-lines and the nodes Q and QB 
+are pre-charged high while the Pre charge circuit (PCH)
+is kept inactive during the first phase, also known as the 
+pre-charge phase. In the evaluation step, the select line is 
+brought down to link the sense amplifier to the memory 
+cell Fig.
+
+<br>
+<br>
+
+![Screenshot-20](https://github.com/user-attachments/assets/6ce88fdd-fdaa-45b9-ab52-20ed0c9fa4bb)
+<br>
+<br>
+<br>
+<h3>Hold Operation -</h3>
+For the hold operation, turn off the word line WL 
+from 1 to 0. That means no read-and-write operation will 
+be done and the data will remain in the hold state.
+<br>
+
+<H2>IV. Simulations </H2>
+<br>
+<br>
+
+
+![Screenshot-24](https://github.com/user-attachments/assets/76543f9b-9d4a-48ea-b3f1-b28d6d9749ff)
+<br>
+<br>
+<br>
+
+![Screenshot-21](https://github.com/user-attachments/assets/a4d21d1e-92a8-436a-ba98-b91bac325d61)
+<br>
+<br>
+<br>
+![Screenshot-23](https://github.com/user-attachments/assets/a7076f67-cd8a-43ec-8a12-5edee512b951)
+
+<br>
+<h2>V. Layout</h2>
+<br>
+<br>
+
+![Screenshot-29](https://github.com/user-attachments/assets/00a87306-9d36-4fc3-a390-0d568bd51895)
+
+
+<br>
+<h2>VI. Results & Conclusion</h2>
+Hence, the paper examine the performance of a
+conventional 6T SRAM in read and write operations in 
+terms of power-delay product. The results were performed
+in 180nm technology, which demonstrates that as the 
+precharge voltage is decreased, power dissipation is 
+improved. For the stability of the memory cell to be 
+maintained, the supply voltage must be chosen properly. 
+Even though power consumption and delay are reduced, 
+strategies, stability should be maintained for reliability 
+concerns.By utilizing various low-power the performance 
+of 6T SRAM cells can be further improved.
+
+
+
+
+
+
 
 
 
