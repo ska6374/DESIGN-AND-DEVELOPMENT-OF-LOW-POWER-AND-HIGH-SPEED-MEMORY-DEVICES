@@ -43,9 +43,8 @@ very close to the source voltage. All the simulations are
 done in cadence virtuoso 180nm technology. 
 
 <h2>III. Design :</h2>
-A. Conventional SRAM 6T Cell-
-<br>
-<br>The design of an SRAM 6T cell is similar to a latch in 
+<h3>A. Conventional SRAM 6T Cell-</h3>
+The design of an SRAM 6T cell is similar to a latch in 
 which two CMOS inverters are connected back to back (M1-
 M2 and M3-M4) with two secondary nmos transistors (M5-
 M6) are connected to the paired bit line BL and bit line bar 
@@ -56,11 +55,8 @@ Fig.<br>
 <br>
 
 ![Screenshot-1](https://github.com/user-attachments/assets/ced1966a-2fa8-4b69-80e5-5edb422c35e9)
-
 <br>
-<br>
-<br>
-<h2>III. Working operation :</h2>
+<br><h2>III. Working operation :</h2>
 The SRAM cell performs three operation
 <br>
 1- Write operation
@@ -70,9 +66,9 @@ The SRAM cell performs three operation
 3- Hold operation
 <br>
 <br>
-<br>
- Write operation -
-<br>When word line (WL) is high, the data should be 
+
+ <h3>Write operation -</h3>
+When word line (WL) is high, the data should be 
 written on Q is 0 and QB is 1 and the word line is enabled 
 1 to access the lines BL and BLB. The BL and BLB act 
 as input. The BLB is connected to the ground because QB 
@@ -82,9 +78,9 @@ and M1is turned on. That means output Q will be 1. So
 input Q is 0 and output Q=1 means data is written.
 <br>
 <br>
-<br>
 
-Read operation -
+
+ <h3>Read operation -</h3>
 WL is high, t memory should hold some value. 
 Now Q is 1 and QB is complementing 0. [6] Now 
 memory has some value stored and to read BL and BLB 
@@ -100,5 +96,17 @@ comparator and it says if BLB decreases then the output
 will be 1 it means we successfully read from the memory 
 because the memory has a value of 1 and getting read 1 
 as output.
+
+ <h3>B. Sense amplifier</h3>
+The sense amplifier is based on the voltage mode's 
+operation on the differential voltage created by the bitlines, The circuit is composed of cross-coupled inverters 
+that turn the bit-line voltage differential at their input into 
+a full-swing output.The voltage mode sensing 
+amplifier circuit is illustrated in the figure.
+<br>
+<br>
+
+![Screenshot-19](https://github.com/user-attachments/assets/9c614303-b22a-4216-ac3a-a60eff595054)
+
 
 
