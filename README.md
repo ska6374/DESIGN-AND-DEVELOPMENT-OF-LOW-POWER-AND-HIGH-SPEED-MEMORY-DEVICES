@@ -144,7 +144,7 @@ be done and the data will remain in the hold state.
 <br>
 
 <BR>
-<H2>IV. Simulations </H2>
+<H2>IV. Simulations :</H2>
 <br>
 <br>
 
@@ -161,7 +161,7 @@ be done and the data will remain in the hold state.
 ![Screenshot-23](https://github.com/user-attachments/assets/a7076f67-cd8a-43ec-8a12-5edee512b951)
 
 <br>
-<h2>V. Layout</h2>
+<h2>V. Layout :</h2>
 <br>
 <br>
 
@@ -169,7 +169,7 @@ be done and the data will remain in the hold state.
 
 
 <br>
-<h2>VI. Results & Conclusion</h2>
+<h2>VI. Results & Conclusion :</h2>
 Hence, the paper examine the performance of a
 conventional 6T SRAM in read and write operations in 
 terms of power-delay product. The results were performed
