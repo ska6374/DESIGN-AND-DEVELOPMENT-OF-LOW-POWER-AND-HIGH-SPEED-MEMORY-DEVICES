@@ -101,7 +101,7 @@ because the memory has a value of 1 and getting read 1
 as output.
 <br>
 <br>
-<h3>B. Sense amplifier</h3>
+<h3>B. Sense amplifier :</h3>
 The sense amplifier is based on the voltage mode's 
 operation on the differential voltage created by the bit-lines, The circuit is composed of cross-coupled inverters 
 that turn the bit-line voltage differential at their input into 
