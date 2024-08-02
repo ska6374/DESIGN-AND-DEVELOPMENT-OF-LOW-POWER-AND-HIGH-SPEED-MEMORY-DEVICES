@@ -170,7 +170,7 @@ be done and the data will remain in the hold state.
 
 <br>
 <h2>VI. Results & Conclusion :</h2>
-Hence, the paper examine the performance of a
+Hence, the project examine the performance of a
 conventional 6T SRAM in read and write operations in 
 terms of power-delay product. The results were performed
 in 180nm technology, which demonstrates that as the 
